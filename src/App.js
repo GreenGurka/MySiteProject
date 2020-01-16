@@ -1,9 +1,11 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import Welcome from './components/pages/Welcome';
 import Home from './components/pages/Home';
 import Portfolio from './components/pages/Portfolio';
 import Contact from './components/pages/Contact';
+
 import './App.css';
 
 function App() {

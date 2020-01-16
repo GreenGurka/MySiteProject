@@ -1,33 +1,10 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-
+import Hamburger from '../component/Hamburger';
 const welcome = () => {
   return (
     <Fragment>
-      <div className='menu-wrap'>
-        <input type='checkbox' className='toggler' />
-        <div className='hamburger'>
-          <div></div>
-        </div>
-        <div className='menu'>
-          <div>
-            <div>
-              <ul>
-                <li>
-                  <Link to='/Home'>Home</Link>
-                </li>
-                <li>
-                  <a href='/'>Portfolio/Cv</a>
-                </li>
-                <li>
-                  <a href='/'>Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <Hamburger />
       <header className='showcase'>
         <div className='container showcase-inner'>
           <h1>Välkommen!</h1>

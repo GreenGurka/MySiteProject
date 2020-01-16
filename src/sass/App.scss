@@ -1,6 +1,9 @@
 @import './Variables';
-@import './hamburger.scss';
+@import './navbar';
+@import './hamburgerWelcome.scss';
 @import './Home';
+@import './Portfolio';
+@import './Contact';
 
 * {
   margin: 0;
@@ -9,7 +12,43 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Gayathri', sans-serif;
   line-height: 1.4;
-  background: $primary-color;
+  background: $white;
+}
+
+.wrapper {
+  background: $white;
+  max-width: 1200px;
+  height: 110vh;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+  box-sizing: border-box;
+  display: grid;
+  grid-gap: 20px;
+}
+
+/* media changes*/
+@media (max-width: 700px) {
+  .main-nav ul {
+    display: none;
+  }
+
+  .main-nav-container {
+    position: fixed;
+    background: $white;
+    width: 100%;
+
+    margin: auto;
+    padding: 0 0rem;
+  }
+  .main-nav {
+    position: fixed;
+    background: $primary-color;
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    padding: 0 0rem;
+  }
 }

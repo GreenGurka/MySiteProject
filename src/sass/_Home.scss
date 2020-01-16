@@ -1,8 +1,29 @@
-.wrapper {
-  background: $whitegrey;
-  max-width: 1200px;
-  height: 110vh;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 3rem;
+.wrapper-home {
+  display: grid;
+  grid-gap: 20px;
+  margin-top: 20px;
+  height: 50vh;
+  grid-template-areas:
+    'homeshowcase homeshowcase  home-box-1'
+    'homeshowcase homeshowcase  home-box-2';
+}
+
+.homeshowcase {
+  grid-area: homeshowcase;
+  min-height: 400px;
+  padding: 3rem;
+}
+.Home-box-1 {
+  grid-area: top-box-1;
+
+  background: url('./img/hector.jpg');
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.Home-box-2 {
+  grid-area: top-box-2;
 }

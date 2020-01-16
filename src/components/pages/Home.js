@@ -1,60 +1,31 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
+import Navbar from '../component/Navbar';
 
 const Home = () => {
   return (
     <Fragment>
-      <div class='wrapper'>
-        <div className='menu-wrap'>
-          <input type='checkbox' className='toggler' />
-          <div className='hamburger'>
-            <div></div>
+      <Navbar />
+      <div className='wrapper'>
+        <div className='wrapper-home'>
+          <div className='homeshowcase'>
+            <h1>Hej!</h1>
+            <h4>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
+              nihil architecto dolore recusandae nemo iusto alias illum commodi
+              unde, autem assumenda exercitationem aliquam! At aliquam provident
+              placeat, animi, enim voluptas a suscipit nesciunt impedit expedita
+              temporibus illo laborum ullam illum.
+            </h4>
           </div>
-          <div className='menu'>
-            <div>
-              <div>
-                <ul>
-                  <li>
-                    <Link to='/Home'>Home</Link>
-                  </li>
-                  <li>
-                    <Link to='/Portfolio'>Portfolio/Cv</Link>
-                  </li>
-                  <li>
-                    <Link to='/Contact'>Contact</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div className='home-box-1'></div>
+          <div className='home-box-2'>
+            <h3>Skills</h3>
+            <p>
+              This is my skills Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Officia, esse.
+            </p>
           </div>
         </div>
-
-        <section class='top-container'>
-          <header class='showcase1'>
-            <h1>Your Web Presence</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-              ipsam! Nihil quo minima nulla atque!
-            </p>
-            <a href='/' class='btn'>
-              Read More
-            </a>
-          </header>
-          <div class='top-box top-box-a'>
-            <h4>Membership</h4>
-            <p class='price'>$199/mo</p>
-            <a href='/' class='btn'>
-              Buy Now
-            </a>
-          </div>
-          <div class='top-box top-box-b'>
-            <h4>Pro Membership</h4>
-            <p class='price'>$299/mo</p>
-            <a href='/' class='btn'>
-              Buy Now
-            </a>
-          </div>
-        </section>
       </div>
     </Fragment>
   );
