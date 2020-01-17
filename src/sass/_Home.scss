@@ -2,9 +2,10 @@
   display: grid;
   grid-gap: 20px;
   margin-top: 20px;
-  height: 50vh;
+  justify-items: center;
+  height: 60vh;
   grid-template-areas:
-    'homeshowcase homeshowcase  home-box-1'
+    'homeshowcase homeshowcase home-box-1'
     'homeshowcase homeshowcase  home-box-2';
 }
 
@@ -12,18 +13,59 @@
   grid-area: homeshowcase;
   min-height: 400px;
   padding: 3rem;
-}
-.Home-box-1 {
-  grid-area: top-box-1;
-
-  background: url('./img/hector.jpg');
-  background-size: cover;
-  background-position: center;
-
-  width: 100%;
-  height: 100%;
+  text-align: left;
+  grid-gap: 20px;
 }
 
-.Home-box-2 {
-  grid-area: top-box-2;
+.home-box-1 {
+  grid-area: home-box-1;
+
+  justify-self: center;
+  margin-top: 2rem;
+  padding: 2rem;
+  background: url('./img/itsmeMario.jpg') no-repeat center center/cover;
+
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+}
+.home-box-2 {
+  grid-area: home-box-2;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .wrapper-home {
+    display: grid;
+    height: auto;
+    grid-gap: 20px;
+    margin-top: 20px;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-areas:
+      'homeshowcase '
+      'homeshowcase '
+      'home-box-1'
+      'home-box-2';
+  }
+  .homeshowcase {
+    margin-top: 20px;
+    height: 500px;
+  }
+  .home-box-1 {
+    grid-area: home-box-1;
+    justify-self: center;
+    margin-top: 4rem;
+    background: url('./img/itsmeMario.jpg') no-repeat center center/cover;
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+  }
+  .home-box-1 {
+    justify-self: center;
+  }
 }

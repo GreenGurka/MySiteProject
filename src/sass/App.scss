@@ -4,7 +4,7 @@
 @import './Home';
 @import './Portfolio';
 @import './Contact';
-
+@import './Footer.scss';
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +20,8 @@ body {
 .wrapper {
   background: $white;
   max-width: 1200px;
-  height: 110vh;
+  min-height: 100vh;
+  max-height: auto;
   margin: auto;
   overflow: hidden;
   padding: 0 3rem;
@@ -50,5 +51,10 @@ body {
     height: 60px;
     margin: auto;
     padding: 0 0rem;
+  }
+}
+@media (max-width: 400px) {
+  .wrapper {
+    padding: 0 1rem;
   }
 }

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Hamburger from './Hamburger';
 
-const Navbar = ({ title, icon1, icon2, icon3 }) => {
+const Navbar = ({ icon1, icon2, icon3 }) => {
   return (
     <Fragment>
       <div className='main-nav-container'>

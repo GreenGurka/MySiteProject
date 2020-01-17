@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import Navbar from '../component/Navbar';
+import Footer from '../component/Footer';
 
 const Home = () => {
   return (
@@ -8,25 +9,43 @@ const Home = () => {
       <div className='wrapper'>
         <div className='wrapper-home'>
           <div className='homeshowcase'>
-            <h1>Hej!</h1>
+            <h1>Hej framtida arbetsgivare!</h1>
             <h4>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
-              nihil architecto dolore recusandae nemo iusto alias illum commodi
-              unde, autem assumenda exercitationem aliquam! At aliquam provident
-              placeat, animi, enim voluptas a suscipit nesciunt impedit expedita
-              temporibus illo laborum ullam illum.
+              Min ambition är att bli en bättre och bättre Frontend developer
+              för varje dag som går. Med en större framtida ambiton om Fullstack
+              developer. Mitt mål just nu är att landa mitt första jobb inom
+              Frontend, och fortsätta öka min kunskap inom yrket!
+            </h4>
+            <br />
+            <h4>
+              Efter att ha växt upp i Stockholm bor jag nu i en by vid namn
+              Bullmark, Umeå kommun. Jag skulle säga att mina positiva sidor är
+              att jag är lugn, lätt att ha att göra med och ser till att lösa
+              mina uppgifter till det bästa som går under rådande
+              omständigheter, alltid.
             </h4>
           </div>
           <div className='home-box-1'></div>
           <div className='home-box-2'>
             <h3>Skills</h3>
             <p>
-              This is my skills Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Officia, esse.
+              Mina programmerings kunskaper är inom: <br />
+              <strong>
+                {' '}
+                REACT, JavaScript, CSS3, HTML5, SASS, Git, Github.
+              </strong>
+              <br />
+              <br /> <br />
+              Har även byggt med Css-frameworks som Bulma och Bootstrap.
             </p>
+            <br />
+            <br />
+            Samt gjort projekt med MERN stack: <br />
+            <strong>MongoDB, Express, React och Node.js</strong>
           </div>
         </div>
       </div>
+      <Footer />
     </Fragment>
   );
 };
