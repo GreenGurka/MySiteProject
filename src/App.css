@@ -303,10 +303,10 @@ html {
     grid-gap: 20px;
     margin-top: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-areas: 'homeshowcase ' 'homeshowcase ' 'home-box-1' 'home-box-2'; }
+    grid-template-areas: 'homeshowcase ' 'homeshowcase ' 'homeshowcase ' 'home-box-1' 'home-box-2'; }
   .homeshowcase {
     margin-top: 20px;
-    height: 500px; }
+    height: auto; }
   .home-box-1 {
     grid-area: home-box-1;
     justify-self: center;
@@ -314,42 +314,97 @@ html {
     background: url("./img/itsmeMario.jpg") no-repeat center center/cover;
     width: 200px;
     height: 200px;
-    border-radius: 50%; }
-  .home-box-1 {
-    justify-self: center; } }
+    border-radius: 50%; } }
 
-.h1contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.portfolioWrap {
+  display: grid;
+  height: 80vh;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center; }
+
+.portfolioWrap2 {
+  display: flex;
+  height: 100vh;
+  background: whitesmoke;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem; }
+
+.CV {
+  margin-top: 30px; }
+
+.CV h1 {
+  display: flex;
+  justify-content: center; }
+
+.CV p {
+  padding: 40px;
+  border-bottom: 1px double black; }
+
+.portfolioCard {
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+  margin-top: 20px;
+  height: 15rem;
+  width: 14rem;
+  border-radius: 20%;
+  border: 2px solid rgba(13, 110, 139, 0.65); }
+  .portfolioCard:hover {
+    background: white;
+    border: 3px solid rgba(13, 110, 139, 0.65); }
+
+.portfolioCard h3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px; }
+
+.portfolioCard p {
+  display: flex;
+  justify-content: center; }
+
+@media (max-width: 1072px) {
+  .portfolioWrap {
+    display: flex;
+    height: auto;
+    margin-top: 6rem;
+    flex-direction: column;
+    justify-content: space-around; }
+  .portfolioCard {
+    margin-bottom: 3rem; }
+  .portfolioWrap2 {
+    height: auto; } }
 
 .contactWrap {
+  display: grid;
+  grid-gap: 20px;
+  width: 100%;
+  height: 100vh;
+  grid-template-areas: 'contactText ' 'contactForm '; }
+
+.contactText {
+  grid-area: contactText;
   display: flex;
-  flex-direction: column;
+  justify-self: center;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  width: 80%; }
 
 .contactForm {
-  display: grid;
-  grid-gap: 20px; }
+  grid-area: contactForm;
+  justify-self: center;
+  width: 80%; }
 
-.contactForm p {
-  padding: 1rem 1rem;
-  font-size: larger;
-  width: 100%; }
-
-.contactForm p input {
-  max-width: 700px;
+#test-mailing {
   width: 100%;
-  height: 2rem;
-  margin-left: 3px; }
+  height: 200px;
+  border: 1px solid black;
+  font-size: larger; }
 
-.message {
-  width: 100%; }
-
-.message textarea {
-  width: 100%; }
+#test-mailing:hover {
+  border: 1px solid rgba(13, 110, 139, 0.65); }
 
 .button {
   width: 100%;
@@ -358,17 +413,40 @@ html {
   background: #fff;
   border: 0;
   text-transform: uppercase;
-  border: 1px solid black; }
+  border: 1px solid black;
+  cursor: pointer; }
 
 .button:hover {
   background: rgba(13, 110, 139, 0.65);
   outline: 0;
   transition: background-color 1s ease-out; }
 
+.contactButton {
+  padding: 3px;
+  margin: 3px;
+  background: #fff;
+  border: 1px solid 0 1px 5px rgba(104, 104, 104, 0.8);
+  border-radius: 15%;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600; }
+  .contactButton:hover {
+    background: rgba(24, 39, 51, 0.85);
+    color: white; }
+
+.paragrafContact a {
+  list-style: none;
+  text-decoration: none; }
+
 @media (max-width: 420px) {
   .contactWrap {
     margin-top: 100px;
-    padding-top: 100px; } }
+    padding-top: 100px; }
+  .contactForm {
+    width: 100%; }
+  .contactText {
+    width: 100%; } }
 
 .footer-wrap {
   display: grid;
@@ -377,8 +455,7 @@ html {
 
 .footer {
   background: grey;
-  min-height: 3rem;
-  margin: 3rem 2rem;
+  min-height: 7rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -389,7 +466,8 @@ html {
   display: flex;
   text-decoration: none;
   list-style: none;
-  flex-direction: row; }
+  flex-direction: row;
+  padding-top: 3px; }
 
 .footer ul a {
   text-decoration: none;

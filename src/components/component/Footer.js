@@ -9,19 +9,28 @@ const Footer = ({ icon4, icon5, icon6 }) => {
           <h4> Site by Johan Smeij version 1.0.0</h4>
           <ul>
             <li>
-              <a href='https://www.linkedin.com/in/johan-smeij-b80867195'>
+              <a
+                href='https://www.linkedin.com/in/johan-smeij-b80867195' //eslint-disable-next-line
+                target='_blank'
+              >
                 <i className={icon4} />
               </a>
             </li>
 
             <li>
-              <a href='https://github.com/GreenGurka/MySiteProject'>
+              <a
+                href='https://github.com/GreenGurka/MySiteProject' //eslint-disable-next-line
+                target='_blank'
+              >
                 <i className={icon5} />
               </a>
             </li>
 
             <li>
-              <a href='https://www.instagram.com/smeijen/'>
+              <a
+                href='https://www.instagram.com/smeijen/' //eslint-disable-next-line
+                target='_blank'
+              >
                 <i className={icon6} />
               </a>
             </li>

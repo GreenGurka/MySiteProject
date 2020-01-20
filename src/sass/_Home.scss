@@ -48,12 +48,13 @@
     grid-template-areas:
       'homeshowcase '
       'homeshowcase '
+      'homeshowcase '
       'home-box-1'
       'home-box-2';
   }
   .homeshowcase {
     margin-top: 20px;
-    height: 500px;
+    height: auto;
   }
   .home-box-1 {
     grid-area: home-box-1;
@@ -64,8 +65,5 @@
     height: 200px;
 
     border-radius: 50%;
-  }
-  .home-box-1 {
-    justify-self: center;
   }
 }
